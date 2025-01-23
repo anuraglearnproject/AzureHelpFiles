@@ -1,0 +1,21 @@
+10. docker build . -t freshangularapprepo:v2.0
+
+11. docker tag freshangularapprepo:v2.0 anuragreview/freshangularapprepo:v2.0
+
+12. docker images
+
+13. docker login
+
+14. docker push anuragreview/freshangularapprepo:v2.0 (this will push the image to your docker account)
+
+15. az login
+
+16. az acr login -n aipfreshregistry
+
+17. docker tag freshangularapprepo:v2.0 aipfreshregistry.azurecr.io/freshangularapprepo:v2.0
+ 
+18. docker push aipfreshregistry.azurecr.io/freshangularapprepo:v2.0
+
+//for external ip run below command in azure portal
+
+19. kubectl create -f AKSDeployment.yml

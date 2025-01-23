@@ -1,0 +1,18 @@
+docker images
+docker pull yourdockerid/yourappimagename
+
+kubectl version  
+kubectl version --client
+
+kubectl get svc
+kubectl get nodes
+kubectl get pods
+kubectl get deployments
+
+
+//clear docker cache
+docker image prune
+docker container prune
+docker volume prune
+docker system prune
+docker builder prune

@@ -1,0 +1,7 @@
+//install azure function sdk
+npm install -g azure-functions-core-tools@4 --unsafe-perm true
+//create azure function project
+func init AipAzFunctionApp --dotnet
+func new --name SendContactDetails --template "HTTP trigger" --authlevel "function"
+dotnet add package MailKit
+func start
